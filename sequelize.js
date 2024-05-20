@@ -5,6 +5,7 @@ const sequelize = new Sequelize(
   "Ow7P78aaZWE9Nc3km7af",
   {
     dialect: "mysql",
+    dialectModule: "mysql2",
     host: "b35o7015bfl1qptpafon-mysql.services.clever-cloud.com",
   }
 );
