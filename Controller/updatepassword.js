@@ -4,6 +4,7 @@ const axios = require("axios");
 const { url } = require("../config");
 // app.use(express.json());
 const updatepassword = async (req, res) => {
+  console.log("Update Password Requested");
   var userid = req.body.userid;
   var password = req.body.password;
   const response = await axios.put(`${url}/user/${userid}`, {

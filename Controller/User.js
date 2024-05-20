@@ -108,9 +108,24 @@ getSpecificusername = (req, res) => {
   });
 };
 
+updatePassword = (req, res) => {
+  console.log("Update Password Requested");
+  User.update(
+    { UserPass: req.body.UserPass },
+    { where: { UserID: req.params.id } }
+  )
+    .then(() => {
+      res.json({ status: 200, Data: "Data Updated" });
+    })
+    .catch((err) => {
+      res.json({ status: 400, Data: "Data Not Updated" });
+    });
+};
+
 module.exports = {
   getUser,
   addUser,
+  updatePassword,
   getSpecificUser,
   updateUser,
   deleteUser,

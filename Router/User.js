@@ -6,10 +6,11 @@ const {
   getSpecificUser,
   updateUser,
   deleteUser,
+  updatePassword,
   getSpecificusername,
 } = require("../Controller/User.js");
 const jwtVerify = require("../Middleware/jwtVerification.js");
-
+Router.route("/:id").put(updatePassword);
 Router.route("/username/:username").get(getSpecificusername);
 
 Router.use("/:token/:username", jwtVerify);
