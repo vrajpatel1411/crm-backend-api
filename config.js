@@ -38,4 +38,4 @@ const equal = (user1, user) => {
 
 // module.exports.url="https://crmapiexcel.herokuapp.com" //paste API URL here.
 
-module.exports.url = "https://crm-backend-api-rouge.vercel.app";
+module.exports.url = "https://web-production-ea1bc.up.railway.app";
