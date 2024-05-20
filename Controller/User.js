@@ -48,6 +48,7 @@ addUser = (req, res) => {
 // This will get client with provided id
 getSpecificUser = (req, res) => {
   // if (Verifytoken(req.params.token, req.params.username)) {
+  console.log("Hello");
   User.findAll({ where: { ClientID: req.params.id } })
     .then((data) => {
       if (data.length > 0) {
