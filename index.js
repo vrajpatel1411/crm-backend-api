@@ -77,6 +77,6 @@ app.post("/session", (req, res) => {
 app.post("/forgetpassword/password", updatepassword);
 
 //-----------------------------
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Running");
 });
