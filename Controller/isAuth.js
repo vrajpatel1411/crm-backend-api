@@ -6,6 +6,7 @@ const { Generatetoken } = require("../config");
 const { url } = require("../config");
 // app.use(express.urlencoded({ extended: true }));
 const isAuth = async (req, res) => {
+  console.log("login called");
   const username = req.body.username;
   const pass = req.body.password;
   var name;
