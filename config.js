@@ -38,5 +38,4 @@ const equal = (user1, user) => {
 
 // module.exports.url="https://crmapiexcel.herokuapp.com" //paste API URL here.
 
-module.exports.url =
-  "https://crm-backend-qdwwiwmr6-vraj-patels-projects.vercel.app";
+module.exports.url = "https://crm-backend-api-rouge.vercel.app";
